@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FilmTreasury - Iniciar Sesión</title>
+    <link rel="stylesheet" href="./stylesheets/login.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <!-- Mitad izquierda con la imagen de fondo -->
+      <aside class="left-side">
+        <img
+          src="./images/login picture.jfif"
+          alt="Imagen de fondo de películas"
+          class="background-image"
+        />
+        <div class="overlay-text">
+          <h2>Donde cada película cuenta su historia</h2>
+        </div>
+      </aside>
+
+      <!-- Mitad derecha con el formulario de inicio de sesión -->
+      <main class="right-side">
+        <section class="login-box">
+          <h1 class="app-name">FilmTreasury</h1>
+          <p class="description">
+            En FilmTreasury, somos apasionados del cine que gestionan tu
+            colección de películas. Explora, agrega y comparte tus filmes
+            favoritos, junto con soporte 24/7.
+          </p>
+          <form class="login-form" action="#" method="post" novalidate>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Ingresa tu correo"
+              required
+              aria-required="true"
+            />
+
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Ingresa tu contraseña"
+              required
+              aria-required="true"
+            />
+
+            <div class="options">
+              <div>
+                <input type="checkbox" id="remember" name="remember" />
+                <label for="remember">Recuérdame</label>
+              </div>
+              <a href="#" class="forgot-password">Olvidé mi contraseña</a>
+            </div>
+
+            <a href="./home.html" class="btn-login">Iniciar Sesión</a>
+
+            <button type="button" class="btn-google-login">
+              <img src="./images/google-icon.svg" alt="Google icon" /> Iniciar
+              sesión con Google
+            </button>
+
+            <p class="register">
+              ¿No tienes cuenta? <a href="#">Regístrate</a>
+            </p>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

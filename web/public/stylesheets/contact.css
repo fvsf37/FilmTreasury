@@ -1,0 +1,231 @@
+@import url("./import.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Prosto One", sans-serif;
+  background-color: #21201e;
+  color: #ebe8ff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+/* Contenedor principal */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Añadimos un ancho máximo para evitar que el contenido esté pegado a los bordes */
+  min-height: 100vh;
+  padding: 0 20px; /* Márgenes laterales */
+}
+
+/* Estructura general con grid */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas: izquierda y derecha */
+  gap: 40px;
+  width: 100%;
+  margin-bottom: 20px; /* Añadimos espacio para el footer */
+}
+
+.back-button {
+  grid-column: 1 / span 2;
+  margin-bottom: 20px;
+}
+
+.btn-back {
+  background-color: #42ab47;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-back:hover {
+  background-color: #369e3d;
+}
+
+/* Información del usuario */
+.user-info {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info p {
+  font-size: 16px;
+  color: #ebe8ff;
+}
+
+/* Formulario de soporte */
+.support-form {
+  background-color: transparent;
+  color: #ebe8ff;
+}
+
+.support-form h1 {
+  font-size: 36px;
+  color: #42ab47;
+  margin-bottom: 20px;
+}
+
+.support-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.support-form input,
+.support-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: none;
+  background-color: #555;
+  color: #ebe8ff;
+}
+
+.support-form .btn-send {
+  background-color: #42ab47;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.support-form .btn-send:hover {
+  background-color: #369e3d;
+}
+
+/* Sección de atención al público */
+.public-attention {
+  color: #42ab47;
+}
+
+.public-attention h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.public-attention p {
+  font-size: 16px;
+  color: #ebe8ff;
+  line-height: 1.6;
+}
+
+/* Sección de dirección */
+.address-section {
+  color: #42ab47;
+}
+
+.address-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.maps-link {
+  font-size: 16px;
+  color: #42ab47;
+  text-decoration: none;
+}
+
+.maps-link:hover {
+  text-decoration: underline;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+}
+
+.address i {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #42ab47;
+}
+
+.address p {
+  font-size: 16px;
+}
+
+/* Footer con Logotipo */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #2b2a29;
+  border-top: 2px solid #42ab47;
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  margin-top: 40px; /* Separación del contenido */
+  position: relative;
+}
+
+.footer .logo img {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #ebe8ff;
+  text-align: center;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .support-form,
+  .public-attention,
+  .address-section {
+    grid-column: 1 / span 1;
+  }
+
+  .support-form h1,
+  .public-attention h2,
+  .address-section h2 {
+    font-size: 24px;
+  }
+
+  .support-form input,
+  .support-form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .support-form .btn-send {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .footer .logo img {
+    width: 40px;
+  }
+}

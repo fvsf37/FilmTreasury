@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FilmTreasury - Soporte</title>
+    <link rel="stylesheet" href="./stylesheets/contact.css" />
+  </head>
+  <body>
+    <!-- Contenedor general para toda la página -->
+    <div class="page-wrapper">
+      <div class="contact-container">
+        <!-- Botón de atrás -->
+        <nav class="back-button">
+          <a href="./home.html" class="btn-back">Home</a>
+        </nav>
+
+        <!-- Información del usuario -->
+        <div class="user-info">
+          <img src="./images/Avatar.jfif" alt="Avatar del usuario" />
+          <p>Francisco Salapic</p>
+        </div>
+
+        <!-- Formulario de Soporte -->
+        <section class="support-form">
+          <h1>Soporte</h1>
+          <form action="#" method="post">
+            <label for="email">Email <span>*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Ingresa tu correo"
+              required
+              aria-required="true"
+            />
+
+            <label for="description">Descripción <span>*</span></label>
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              placeholder="Describe tu consulta"
+              required
+              aria-required="true"
+            ></textarea>
+
+            <button type="submit" class="btn-send">Enviar</button>
+          </form>
+        </section>
+
+        <!-- Sección de Atención al público -->
+        <section class="public-attention">
+          <h2>Atención al público</h2>
+          <p>
+            Nuestro equipo actúa como su asistente digital, gestionando
+            consultas sobre películas, confirmaciones de reservas y ofreciendo
+            soporte 24/7 para una experiencia cinematográfica excepcional.
+          </p>
+        </section>
+
+        <!-- Sección de Dirección -->
+        <section class="address-section">
+          <h2>Dirección</h2>
+          <a
+            href="https://www.google.com/maps"
+            class="maps-link"
+            target="_blank"
+            >Encuéntranos en Google Maps &rarr;</a
+          >
+          <div class="address">
+            <i class="building-icon"></i>
+            <p>Plaza de la milagrosa</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- Footer con Logotipo -->
+      <footer class="footer">
+        <div class="logo">
+          <img src="./images/Logo.jpg" alt="Logo FilmTreasury" />
+        </div>
+        <p>&copy; 2024 FilmTreasury - Todos los derechos reservados</p>
+      </footer>
+    </div>
+  </body>
+</html>
