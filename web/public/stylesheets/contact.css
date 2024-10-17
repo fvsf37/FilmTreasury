@@ -23,19 +23,19 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  max-width: 1200px; /* Añadimos un ancho máximo para evitar que el contenido esté pegado a los bordes */
+  max-width: 1200px;
   min-height: 100vh;
-  padding: 0 20px; /* Márgenes laterales */
+  padding: 0 20px;
   margin: 0 auto;
 }
 
 /* Estructura general con grid */
 .contact-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Dos columnas: izquierda y derecha */
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
   width: 100%;
-  margin-bottom: 20px; /* Añadimos espacio para el footer */
+  margin-bottom: 20px;
   flex-grow: 1;
 }
 
@@ -99,7 +99,7 @@ body {
 }
 
 textarea {
-  resize: none; /* Desactiva el redimensionado */
+  resize: none;
   width: 100%;
   padding: 12px;
   border-radius: 6px;
@@ -160,9 +160,9 @@ textarea {
 }
 .map-container {
   width: 100%;
-  height: 300px; /* Controla la altura del mapa */
-  margin-top: 20px; /* Espacio entre la dirección y el mapa */
-  border: 2px solid #42ab47; /* Opcional: agregar borde alrededor del mapa */
+  height: 300px;
+  margin-top: 20px;
+  border: 2px solid #42ab47;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -200,7 +200,7 @@ textarea {
   padding: 20px;
   background-color: #2b2a29;
   border-top: 2px solid #42ab47;
-  width: 100%; /* Asegura que ocupe todo el ancho */
+  width: 100%;
   position: relative;
   bottom: 0;
   left: 0;
